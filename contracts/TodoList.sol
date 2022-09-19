@@ -4,8 +4,8 @@ pragma solidity ^0.8.9;
 /*
     STEPS
 
-    1. Implement todo list contract
-    2. Implement tests for todo list contract
+    1. Implement todo list contract                         Done
+    2. Implement tests for todo list contract               
     3. Deploy contract and create frontend template
     4. Implement connect wallet functionality
     5. Inject web3 obj / ethersjs
@@ -56,8 +56,8 @@ contract TodoList {
         while (id < tasks.length && resultIndex < userToTaskCount[owner]) {
             if (idToUser[id] == owner) {
                 result[resultIndex] = id;
+                resultIndex++;
             }
-            resultIndex++;
             id++;
         }
 
